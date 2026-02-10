@@ -546,6 +546,17 @@ h3,
     padding-top: 50px;
 }
 
+.hero-content .reveal {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 50px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: fit-content;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
 .hero-content h1 {
     font-family: 'Inter', sans-serif;
     font-weight: 800;
