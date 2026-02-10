@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | STACKLY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body class="error-page-body">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="loader-logo">STACKLY</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <header id="main-header">
+        <div class="header-inner">
+            <div class="header-left">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.webp" alt="STACKLY" class="logo-img">
+                    <span class="logo-text">STACKLY</span>
+                </a>
+            </div>
+            <div class="header-right">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#detailed-services">Services</a></li>
+                        <li><a href="index.html#invest">Contact</a></li>
+                    </ul>
+                    <div class="nav-actions">
+                        <a href="404.html" class="btn btn-login">Login</a>
+                        <a href="index.html" class="btn btn-open">Open Account</a>
+                    </div>
+                </nav>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="error-page-main">
+        <div class="error-bg-shapes">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+        </div>
+
+        <div class="container container-error">
+            <div class="error-content">
+                <h1 class="error-code">404</h1>
+                <h2>Lost in Transit</h2>
+                <p>The financial horizon you're looking for seems to have moved. Let's get you back to secure ground.
+                </p>
+                <div class="error-actions">
+                    <a href="index.html" class="btn btn-primary btn-lg">Return to Home</a>
+                    <a href="index.html#invest" class="btn btn-outline btn-lg">Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">STACKLY</span>
+                    </a>
+                    <p>Pioneering the future of wealth through heritage and innovation.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Banking</h4>
+                    <ul>
+                        <li><a href="404.html">Private Banking</a></li>
+                        <li><a href="404.html">Savings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="404.html">Privacy Policy</a></li>
+                        <li><a href="404.html">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 STACKLY International. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Specific 404 animation if needed, or rely on script.js globals
+        document.addEventListener('DOMContentLoaded', () => {
+            gsap.from('.error-code', {
+                opacity: 0,
+                scale: 0.8,
+                duration: 1.5,
+                ease: "elastic.out(1, 0.5)",
+                delay: 1.5
+            });
+        });
+    </script>
+</body>
+
+</html>

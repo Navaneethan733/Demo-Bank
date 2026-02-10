@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STACKLY | Bespoke Wealth Management</title>
+    <meta name="description"
+        content="Experience premium banking with STACKLY. Tailored wealth management, exclusive credit cards, and secure investment solutions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- GSAP for advanced animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="loader-logo">STACKLY</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <header id="main-header">
+        <div class="header-inner">
+            <div class="header-left">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.webp" alt="STACKLY" class="logo-img">
+                    <span class="logo-text">STACKLY</span>
+                </a>
+            </div>
+            <div class="header-right">
+                <nav>
+                    <ul class="nav-links">
+                        <li class="has-dropdown">
+                            <a href="404.html">Home <span class="chevron"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html">Main Home</a></li>
+                                <li><a href="404.html">Investment Home</a></li>
+                                <li><a href="404.html">Private Banking</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#about">About</a></li>
+                        <li class="has-dropdown">
+                            <a href="404.html">Services <span class="chevron"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="404.html">Wealth Management</a></li>
+                                <li><a href="404.html">Strategic Planning</a></li>
+                                <li><a href="404.html">Asset Protection</a></li>
+                                <li><a href="404.html">Global Accounts</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="404.html">Pages <span class="chevron"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="404.html">Our Team</a></li>
+                                <li><a href="404.html">Pricing Plans</a></li>
+                                <li><a href="404.html">FAQ's</a></li>
+                                <li><a href="404.html">Testimonials</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#invest">Contact</a></li>
+                    </ul>
+                    <div class="nav-actions">
+                        <a href="404.html" class="btn btn-login">Login</a>
+                        <a href="404.html" class="btn btn-open">Open Account</a>
+                    </div>
+                </nav>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-slider">
+                <div class="hero-slide active" style="background-image: url('images/banner/banner-1.webp');"></div>
+                <div class="hero-slide" style="background-image: url('images/banner/banner-2.webp');"></div>
+                <div class="hero-slide" style="background-image: url('images/banner/banner-3.webp');"></div>
+            </div>
+
+            <div class="container hero-content">
+                <div class="reveal">
+                    <span class="badge">Wealth Management</span>
+                    <h1>Open our <span class="text-brand">Current</span> Account Online</h1>
+                    <p>This statistic is based on our average personal current account online opening time from the last
+                        12 months.</p>
+                    <div class="hero-btns">
+                        <a href="404.html" class="btn btn-open btn-lg">Make an Appointment</a>
+                        <a href="404.html" class="btn btn-outline btn-lg">Our Story</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <div class="mouse"></div>
+                <span>Scroll to explore</span>
+            </div>
+        </section>
+        <section id="detailed-services" class="section reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="badge">OUR SERVICES</span>
+                    <h2>Online Banking at Your <span class="text-brand">Fingertips</span></h2>
+                </div>
+
+                <div class="services-grid-detailed">
+                    <!-- Row 1 -->
+                    <div class="service-card-detailed">
+                        <div class="s-icon-wrap"><img src="images/icons/icon-1.png" alt="Digital Banking"></div>
+                        <h3>Digital Banking</h3>
+                        <ul>
+                            <li>Bank & savings accounts</li>
+                            <li>Credit cards</li>
+                            <li>Personal loans</li>
+                        </ul>
+                        <div class="s-card-bg-shape"></div>
+                    </div>
+                    <div class="service-card-detailed">
+                        <div class="s-icon-wrap"><img src="images/icons/icon-1.png" alt="Mobile & Web Banking"></div>
+                        <h3>Mobile & Web Banking</h3>
+                        <ul>
+                            <li>Instant Access</li>
+                            <li>Savings Fixed Term</li>
+                            <li>Savings Instant</li>
+                        </ul>
+                        <div class="s-card-bg-shape"></div>
+                    </div>
+                    <div class="service-card-detailed">
+                        <div class="s-icon-wrap"><i class="fas fa-shield-alt" style="font-size: 2rem; color: #fff;"></i>
+                        </div>
+                        <h3>Insurance Policies</h3>
+                        <ul>
+                            <li>Pet insurance</li>
+                            <li>Transport Insurance</li>
+                            <li>Accident insurance</li>
+                        </ul>
+                        <div class="s-card-bg-shape"></div>
+                    </div>
+                    <div class="service-card-detailed">
+                        <div class="s-icon-wrap"><img src="images/icons/icon-1.png" alt="Home & Property Loan"></div>
+                        <h3>Home & Property Loan</h3>
+                        <ul>
+                            <li>Residential Mortgages</li>
+                            <li>Buy-to-let Mortgages</li>
+                            <li>Building Mortgages</li>
+                        </ul>
+                        <div class="s-card-bg-shape"></div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="service-card-detailed">
+                        <div class="s-icon-wrap"><img src="images/icons/icon-1.png" alt="Business Accounts"></div>
+                        <h3>Business Accounts</h3>
+                        <ul>
+                            <li>Corporate Banking</li>
+                            <li>Merchant Services</li>
+                            <li>Payroll Solutions</li>
+                        </ul>
+                        <div class="s-card-bg-shape"></div>
+                    </div>
+                    <div class="service-card-detailed">
+                        <div class="s-icon-wrap"><img src="images/icons/icon-1.png" alt="Investment Tools"></div>
+                        <h3>Investment Tools</h3>
+                        <ul>
+                            <li>Stock Trading</li>
+                            <li>Crypto Wallets</li>
+                            <li>Wealth Reports</li>
+                        </ul>
+                        <div class="s-card-bg-shape"></div>
+                    </div>
+                    <div class="service-card-detailed">
+                        <div class="s-icon-wrap"><i class="fas fa-vault" style="font-size: 2rem; color: #fff;"></i>
+                        </div>
+                        <h3>Safe Deposit</h3>
+                        <ul>
+                            <li>Secure Vaults</li>
+                            <li>Asset Storage</li>
+                            <li>Private Access</li>
+                        </ul>
+                        <div class="s-card-bg-shape"></div>
+                    </div>
+                    <div class="service-card-detailed">
+                        <div class="s-icon-wrap"><img src="images/icons/icon-4.png" alt="Card Security"></div>
+                        <h3>Card Security</h3>
+                        <ul>
+                            <li>Fraud Protection</li>
+                            <li>Instant Block</li>
+                            <li>Global Coverage</li>
+                        </ul>
+                        <div class="s-card-bg-shape"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="section reveal">
+            <div class="container about-new-grid">
+                <div class="about-visual-side reveal">
+                    <div class="about-img-wrap">
+                        <img src="images/resource/about-1.webp" alt="About STACKLY" class="main-about-img">
+                        <!-- Rating Badge -->
+                        <div class="rating-badge">
+                            <div class="stars">★★★★★</div>
+                            <span>5 Star Rating Bank</span>
+                        </div>
+                        <!-- Experience Badge -->
+                        <div class="experience-badge">
+                            <div class="eb-inner">
+                                <span class="eb-number">40</span>
+                                <span class="eb-text">Years of<br>Experience</span>
+                            </div>
+                            <svg class="eb-circle-svg" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="48" fill="none" stroke="rgba(255,255,255,0.2)"
+                                    stroke-width="2"></circle>
+                                <circle cx="50" cy="50" r="48" fill="none" stroke="#fff" stroke-width="2"
+                                    stroke-dasharray="150 301"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="about-dots-pattern"></div>
+                </div>
+
+                <div class="about-content-side reveal">
+                    <div class="section-header align-left">
+                        <h2>Financial Guidance for Every <span class="text-brand">Stage of Life.</span></h2>
+                        <p>At STACKLY, we blend traditional banking values with cutting-edge financial technology. Our
+                            mission is to provide you with the tools and expertise needed to secure your financial
+                            future.</p>
+                    </div>
+
+                    <div class="about-features-list">
+                        <div class="about-feature-item">
+                            <div class="af-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                                <!-- Assuming FontAwesome is available, if not use icon-wrap -->
+                                <div class="af-icon-circle"></div>
+                            </div>
+                            <div class="af-text">
+                                <h3>Solution Focused</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis, suscipit you
+                                    take action against fraud.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature-item">
+                            <div class="af-icon">
+                                <i class="fas fa-check"></i>
+                                <div class="af-icon-circle"></div>
+                            </div>
+                            <div class="af-text">
+                                <h3>99.99% Success</h3>
+                                <p>See it the Security Center for and Mobile and Online Banking. Donec felis tincidunt
+                                    feugiat.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="404.html" class="btn btn-primary btn-lg">Discover More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile App Section -->
+        <section id="app" class="section bg-alt overflow-hidden reveal">
+            <div class="container app-grid">
+                <div class="app-content reveal">
+                    <h2>Banking in Your <span class="text-gold">Pocket</span></h2>
+                    <p>Manage your wealth on the go with our premium mobile application. Secure, fast, and packed
+                        with
+                        intelligent insights.</p>
+                    <div class="app-btns">
+                    </div>
+                </div>
+                <div class="app-vis-wrap">
+                    <img src="images/resource/mockup-1.webp" alt="App Mockup" class="app-mockup m1 reveal anim-float">
+                    <img src="images/resource/mockup-2.webp" alt="App Mockup" class="app-mockup m2 reveal anim-float"
+                        style="animation-delay: 0.5s;">
+                </div>
+            </div>
+        </section>
+
+        <section id="cards" class="section bg-alt reveal">
+            <div class="container card-showcase">
+                <div class="showcase-info reveal">
+                    <h2>The Obsidian <span class="text-gold">Privilege</span></h2>
+                    <p>Crafted from brushed stainless steel. No preset spending limit. Concierge service available
+                        24/7
+                        globally.</p>
+                    <ul class="benefits-list">
+                        <li>5x points on all travel and luxury dining</li>
+                        <li>Unlimited airport lounge access</li>
+                        <li>Complimentary elite status with global partners</li>
+                    </ul>
+                    <a href="404.html" class="btn btn-primary">Request Invitation</a>
+                </div>
+                <div class="card-visual-wrap reveal">
+                    <div class="premium-card">
+                        <div class="card-chip"></div>
+                        <div class="card-logo">STACKLY</div>
+                        <div class="card-number">•••• •••• •••• 8888</div>
+                        <div class="card-footer">
+                            <span class="card-holder">ALEXANDER DUPONT</span>
+                            <span class="card-valid">12/28</span>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculator Section -->
+        <section id="calculator" class="section reveal">
+            <div class="container calc-grid">
+                <div class="calc-content reveal">
+                    <span class="badge">Planning</span>
+                    <h2>Plan Your Financial <span class="text-gold">Legacy</span></h2>
+                    <p>Use our interactive tools to project your wealth growth and legacy planning over the next
+                        decades.</p>
+                    <div class="calc-placeholder">
+                        <div class="calc-row">
+                            <span>Initial Investment</span>
+                            <span class="val" id="investment-val">$500,000</span>
+                        </div>
+                        <input type="range" id="wealth-slider" class="calc-range" min="100000" max="5000000"
+                            step="50000" value="500000">
+                        <div class="calc-row">
+                            <span>Projected Return (10yrs)</span>
+                            <span class="val text-gold" id="return-val">$1,250,000</span>
+                        </div>
+                    </div>
+                    <a href="404.html" class="btn btn-outline">Sophisticated Planning</a>
+                </div>
+                <div class="calc-image reveal anim-parallax">
+                    <img src="images/resource/calculator-1.webp" alt="Calculator Resource">
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section bg-alt reveal">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Client <span class="text-gold">Voices</span></h2>
+                    <p>Hear from the global leaders and visionaries who trust STACKLY.</p>
+                </div>
+                <div class="testimonial-slider-wrap reveal">
+                    <div class="testimonial-grid slider-track">
+                        <div class="testimonial-card">
+                            <div class="quote-icon">"</div>
+                            <p>The level of precision and personal attention I receive at STACKLY is unmatched in
+                                the global banking sector.</p>
+                            <div class="client-info">
+                                <img src="images/resource/testimonial-1.webp" alt="Client 1">
+                                <div>
+                                    <strong>Sarah Jenkins</strong>
+                                    <span>CEO, TechVision</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="quote-icon">"</div>
+                            <p>Finally, a bank that understands the speed of digital commerce while maintaining
+                                traditional security values.</p>
+                            <div class="client-info">
+                                <img src="images/resource/testimonial-2.webp" alt="Client 2">
+                                <div>
+                                    <strong>Marcus Thorne</strong>
+                                    <span>Venture Partner</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="quote-icon">"</div>
+                            <p>Their multi-currency Management has simplified my international operations
+                                significantly. Truly borderless banking.</p>
+                            <div class="client-info">
+                                <img src="images/resource/testimonial-3.webp" alt="Client 3">
+                                <div>
+                                    <strong>Elena Rodriguez</strong>
+                                    <span>Director, EuroTrade</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="slider-prev">&larr;</button>
+                        <button class="slider-next">&rarr;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="invest" class="section overflow-hidden reveal">
+            <div class="section-bg-shapes">
+                <img src="images/shape/shape-8.webp" alt="" class="bg-shape s4 anim-float">
+                <img src="images/shape/shape-9.webp" alt="" class="bg-shape s5 anim-parallax">
+            </div>
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Latest <span class="text-gold">Insights</span></h2>
+                    <p>Stay ahead with our expert analysis on global markets and trends.</p>
+                </div>
+                <div class="news-grid">
+                    <div class="news-card reveal anim-zoom">
+                        <div class="news-img">
+                            <img src="images/news/news-1.webp" alt="News 1">
+                            <div class="date-badge">
+                                <i class="fas fa-calendar"></i>
+                                Apr 17, 2022
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <h4>Self-Guided Driving & Tours Walk Of Greater City</h4>
+                            <div class="news-meta">
+                                <span><i class="fas fa-user"></i> Admin</span>
+                                <span><i class="fas fa-comment"></i> 0 Comment</span>
+                            </div>
+                            <a href="404.html" class="btn btn-read-more">Read More</a>
+                        </div>
+                    </div>
+                    <div class="news-card reveal anim-zoom">
+                        <div class="news-img">
+                            <img src="images/news/news-2.webp" alt="News 2">
+                            <div class="date-badge">
+                                <i class="fas fa-calendar"></i>
+                                Apr 16, 2022
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <h4>Assistance For Homes & Properties Real Estate</h4>
+                            <div class="news-meta">
+                                <span><i class="fas fa-user"></i> Admin</span>
+                                <span><i class="fas fa-comment"></i> 4 Comment</span>
+                            </div>
+                            <a href="404.html" class="btn btn-read-more">Read More</a>
+                        </div>
+                    </div>
+                    <div class="news-card reveal anim-zoom">
+                        <div class="news-img">
+                            <img src="images/news/news-3.webp" alt="News 3">
+                            <div class="date-badge">
+                                <i class="fas fa-calendar"></i>
+                                Apr 15, 2022
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <h4>Long-Term Vision Of Health & Attractive Facility</h4>
+                            <div class="news-meta">
+                                <span><i class="fas fa-user"></i> Admin</span>
+                                <span><i class="fas fa-comment"></i> 1 Comment</span>
+                            </div>
+                            <a href="404.html" class="btn btn-read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="join" class="section reveal">
+            <div class="container">
+                <div class="cta-banner reveal anim-parallax">
+                    <div class="cta-content">
+                        <h2>Ready to elevate your future?</h2>
+                        <p>Join the inner circle of the world's most sophisticated investors.</p>
+                    </div>
+                    <a href="404.html" class="btn btn-open btn-lg">Open Account</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">STACKLY</span><span class="logo-sub"></span>
+                    </a>
+                    <p>Pioneering the future of wealth through heritage and innovation.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Banking</h4>
+                    <ul>
+                        <li><a href="404.html">Private Banking</a></li>
+                        <li><a href="404.html">Savings</a></li>
+                        <li><a href="404.html">Cards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="404.html">Our Story</a></li>
+                        <li><a href="404.html">Careers</a></li>
+                        <li><a href="404.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="404.html">Privacy Policy</a></li>
+                        <li><a href="404.html">Security</a></li>
+                        <li><a href="404.html">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 STACKLY International. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
